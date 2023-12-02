@@ -3,11 +3,21 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  gap: 0.5rem;
+}
+
+.container::placeholder {
+  color: var(--gray-300)
+}
+
+.container:focus {
+  border-color: var(--purple-dark);
 }
 
 .textbox {
+  width: 100%;
   background-color: var(--gray-500);
-
-  border: 1px solid;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
 }
