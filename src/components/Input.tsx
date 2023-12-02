@@ -1,7 +1,9 @@
 import styles from './Input.module.css'
 
-export default function Input() {
+type Props = React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
+
+export default function Input({...rest}: Props) {
   return (
-    <input className={styles.textbox} type="text" placeholder='Adicione uma nova tarefa' />
+    <input className={styles.textbox} type="text" placeholder='Adicione uma nova tarefa' {...rest} />
   )
 }
