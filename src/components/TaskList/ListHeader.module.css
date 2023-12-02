@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.taskCount {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.countNumber {
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+
+  padding: 0.125rem 0.5rem;
+
+  border-radius: 16px;
+
+  font-size: 0.75rem;
+}
+
+.taskCountText {
+  color: var(--blue);
+}
+
+.taskCompletedText {
+  color: var(--purple);
+}
