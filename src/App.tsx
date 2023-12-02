@@ -1,4 +1,4 @@
-import Form from './components/Form';
+import Input from './components/Input';
 import Header from './components/Header';
 import styles from './App.module.css'
 import Button from './components/Button';
@@ -13,7 +13,7 @@ function App() {
 
         <div className={styles.content}>
           <div className={styles.taskCreationContainer}>
-            <Form />
+            <Input />
             <Button>
               Criar
               <PlusCircle size={16} color='#f2f2f2' weight='bold'/>
