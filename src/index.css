@@ -14,3 +14,12 @@
 
   --danger: #e25858;
 }
+
+body,
+input,
+textarea,
+button {
+  font-family: "Inter", sans-serif;
+  line-height: 140%;
+  font-size: 1rem;
+}
