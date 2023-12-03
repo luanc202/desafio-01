@@ -6,11 +6,11 @@
   gap: 0.5rem;
 }
 
-.container::placeholder {
-  color: var(--gray-300)
+.textbox::placeholder {
+  color: var(--gray-400)
 }
 
-.container:focus {
+.textbox:focus {
   border-color: var(--purple-dark);
 }
 
