@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# Challenge 01 of the ReactJS track of Ignite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this challenge we will create a simple application practice basic concepts in React.
 
-Currently, two official plugins are available:
+- Componentization
+- Usage of props in components
+- Usage and update of states in components
+- Usage of handler functions in components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## This project was made with
 
-## Expanding the ESLint configuration
+- [ReactJS](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## How to run
 
-- Configure the top-level `parserOptions` property like this:
+Required: [Node.js](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Clone this repo and run the following commands:
+
+```bash
+# Install dependencies
+$ yarn
+# or
+$ npm install
+
+# Run the app
+$ yarn dev
+# or
+$ npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Open [http://localhost:5174/](http://localhost:5174/), or any other port where the `run dev` command logged the URL, with your browser to see the page.
