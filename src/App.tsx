@@ -26,7 +26,7 @@ function App() {
     const newTask: Task = {
       title: inputValue,
       isCompleted: false,
-      id: tasks.length + 1,
+      id: new Date().getTime() + 1,
     }
 
     setTasks((state) => [...state, newTask]);
