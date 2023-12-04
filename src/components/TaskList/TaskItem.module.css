@@ -38,6 +38,15 @@
   transition: 0.2s background-color;
 }
 
+.task button:hover {
+  fill: var(--danger);
+  background-color: var(--gray-400);
+}
+
+.task button:hover svg {
+  fill: var(--danger);
+}
+
 .title {
   line-height: 140%;
   font-size: 0.875rem;
