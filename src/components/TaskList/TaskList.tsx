@@ -12,9 +12,13 @@ export default function TaskList({ tasks, handleRemoveTask, handleTaskToggle }: 
 
   return (
     <div className={styles.container}>
-      {tasks.map(task => (
+      {tasks.filter((task) => task.isCompleted == false).map(task => (
+        <TaskItem handleRemoveTask={handleRemoveTask} handleTaskToggle={handleTaskToggle} task={task} key={task.id} />
+      ))}
+      {tasks.filter((task) => task.isCompleted == true).map(task => (
         <TaskItem handleRemoveTask={handleRemoveTask} handleTaskToggle={handleTaskToggle} task={task} key={task.id} />
       ))}
     </div>
+    
   )
 }
